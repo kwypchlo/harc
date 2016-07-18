@@ -1,6 +1,6 @@
 import angular from 'angular';
 import ngMaterial from 'angular-material';
-import hartDashboard from './components/hart-dashboard';
+import harcDashboard from './components/harc-dashboard';
 
 import 'normalize.css/normalize.css';
 import 'angular-material/angular-material.css';
@@ -23,7 +23,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [ngMaterial, hartDashboard])
+angular.module(MODULE_NAME, [ngMaterial, harcDashboard])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
 

@@ -1,0 +1,17 @@
+<harc-widget>
+  <widget-title>Heating</widget-title>
+  <widget-icon>
+    <md-icon md-font-icon="icon-fire" class="harc-widget-temperature-icon"></md-icon>
+  </widget-icon>
+  <widget-content>
+    <ul>
+      <li ng-repeat="room in $ctrl.data" class="harc-widget-row" layout="row" layout-align="space-between center">
+        <div>{{ room.name }}</div>
+        <div layout="row" layout-align="start center">
+          <span class="md-caption">current: {{ room.current }}°C</span>
+          <harc-temperature-field ng-model="room.value" ng-change="$ctrl.change(room)"></harc-temperature-field>
+        </div>
+      </li>
+    </ul>
+  </widget-content>
+</harc-widget>

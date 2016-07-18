@@ -1,0 +1,11 @@
+<div class="harc-temperature-field">
+  <md-button class="md-raised harc-temperature-field-button mod-decrease" ng-click="$ctrl.decrease()"
+             aria-label="Decrease temperature">
+    <md-icon md-font-icon="icon-minus"></md-icon>
+  </md-button>
+  <span>{{ $ctrl.modelCtrl.$viewValue }}°C</span>
+  <md-button class="md-raised harc-temperature-field-button mod-increase" ng-click="$ctrl.increase()"
+             aria-label="Increase temperature">
+    <md-icon md-font-icon="icon-plus"></md-icon>
+  </md-button>
+</div>

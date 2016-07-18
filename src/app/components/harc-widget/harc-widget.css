@@ -1,0 +1,27 @@
+.harc-widget {
+  padding: 5px;
+}
+
+  .harc-widget-aside {
+    margin: 0 20px;
+    min-width: 150px;
+    text-align: center;
+  }
+
+    .harc-widget-aside-title {
+      line-height: 59px;
+    }
+
+    .harc-widget-aside-icon {
+      font-size: 59px;
+    }
+
+  .harc-widget-row {
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+  }
+
+    /** override angular-material md-switch to have zero margin so the row looks more compact **/
+    .harc-widget-row md-switch {
+      margin: 0;
+    }
