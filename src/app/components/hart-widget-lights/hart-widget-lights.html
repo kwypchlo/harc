@@ -1,0 +1,16 @@
+<hart-widget>
+  <widget-title>Lights</widget-title>
+  <widget-icon>
+    <md-icon md-font-icon="icon-sun" class="hart-widget-lights-icon"></md-icon>
+  </widget-icon>
+  <widget-content>
+    <ul>
+      <li ng-repeat="room in $ctrl.data" class="hart-widget-row" layout="row" layout-align="space-between center">
+        <div>{{ room.name }}</div>
+        <div>
+          <md-switch ng-model="room.value" ng-change="$ctrl.change(room)" aria-label="Switch light in {{ room.name }}"></md-switch>
+        </div>
+      </li>
+    </ul>
+  </widget-content>
+</hart-widget>

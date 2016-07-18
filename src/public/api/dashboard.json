@@ -1,0 +1,77 @@
+{
+  "curtains": [
+    {
+      "id": 1,
+      "name": "Kitchen",
+      "value": 3
+    },
+    {
+      "id": 2,
+      "name": "Living room (west)",
+      "value": 3
+    },
+    {
+      "id": 3,
+      "name": "Living room (north)",
+      "value": 0
+    },
+    {
+      "id": 4,
+      "name": "Bedroom (north)",
+      "value": 5
+    },
+    {
+      "id": 5,
+      "name": "Bedroom (east)",
+      "value": 0
+    }
+  ],
+  "lights": [
+    {
+      "id": 1,
+      "name": "Kitchen",
+      "value": true
+    },
+    {
+      "id": 2,
+      "name": "Living room",
+      "value": true
+    },
+    {
+      "id": 3,
+      "name": "Bathroom",
+      "value": false
+    },
+    {
+      "id": 4,
+      "name": "Bedroom",
+      "value": true
+    }
+  ],
+  "temperature": [
+    {
+      "id": 1,
+      "name": "Kitchen",
+      "current": 22,
+      "value": 22
+    },
+    {
+      "id": 2,
+      "name": "Living room",
+      "current": 23,
+      "value": 21
+    },
+    {
+      "id": 3,
+      "name": "Bathroom",
+      "current": 21,
+      "value": 24
+    },
+    {
+      "id": 4,
+      "name": "Bedroom",
+      "current": 21,
+      "value": 21
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+.hart-widget {
+  padding: 5px;
+}
+
+  .hart-widget-aside {
+    margin: 0 20px;
+    min-width: 150px;
+    text-align: center;
+  }
+
+    .hart-widget-aside-title {
+      line-height: 59px;
+    }
+
+    .hart-widget-aside-icon {
+      font-size: 59px;
+    }
+
+  .hart-widget-row {
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+  }
+
+    /** override angular-material md-switch to have zero margin so the row looks more compact **/
+    .hart-widget-row md-switch {
+      margin: 0;
+    }

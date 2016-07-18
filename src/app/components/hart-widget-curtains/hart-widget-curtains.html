@@ -1,0 +1,16 @@
+<hart-widget>
+  <widget-title>Curtains</widget-title>
+  <widget-icon>
+    <md-icon md-font-icon="icon-barcode" class="hart-widget-curtains-icon"></md-icon>
+  </widget-icon>
+  <widget-content>
+    <ul>
+      <li ng-repeat="room in $ctrl.data" class="hart-widget-row" layout="row" layout-align="space-between center">
+        <div flex>{{ room.name }}</div>
+        <md-slider md-discrete ng-model="room.value" ng-change="$ctrl.change(room)" step="1" min="1" max="5" flex="50"
+                   aria-label="Set curtains in {{ room.name }}">
+        </md-slider>
+      </li>
+    </ul>
+  </widget-content>
+</hart-widget>

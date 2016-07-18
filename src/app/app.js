@@ -1,5 +1,10 @@
 import angular from 'angular';
+import ngMaterial from 'angular-material';
+import hartDashboard from './components/hart-dashboard';
 
+import 'normalize.css/normalize.css';
+import 'angular-material/angular-material.css';
+import '../style/icomoon.css';
 import '../style/app.css';
 
 let app = () => {
@@ -12,13 +17,13 @@ let app = () => {
 
 class AppCtrl {
   constructor() {
-    this.url = 'https://github.com/preboot/angular-webpack';
+
   }
 }
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [])
+angular.module(MODULE_NAME, [ngMaterial, hartDashboard])
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
 
