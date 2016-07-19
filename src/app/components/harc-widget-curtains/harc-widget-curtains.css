@@ -1,3 +1,11 @@
-.harc-widget-curtains-icon {
-  color: #607D8B;
+.harc-widget-curtains {
+
 }
+
+  .harc-widget-curtains-icon {
+    color: #607D8B;
+  }
+
+  .harc-widget-curtains md-slider {
+    height: 36px;
+  }
