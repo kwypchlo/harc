@@ -1,5 +1,12 @@
 # Home Automation Remote Controller POC
 
+## Installation
+
+Install application dependencies with:
+```bash
+npm install
+```
+
 ## Running the app
 
 After you have installed all dependencies you can now run the app with:
