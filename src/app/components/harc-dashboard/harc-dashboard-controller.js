@@ -1,6 +1,7 @@
 export default class HarcDashboardController {
 
-  constructor(harcDashboardApiService) {
+  constructor($log, harcDashboardApiService) {
+    this.$log = $log;
     this.api = harcDashboardApiService;
     this.data = {};
     this.widgets = [];
@@ -14,16 +15,16 @@ export default class HarcDashboardController {
     this.api.get(this.widgets).then((data) => {
       this.data = data;
     }, (error) => {
-      // error handling
+      this.$log.error('Unhandled error!', error);
     });
   }
 
   registerWidget(widget) {
     if (this.widgets.indexOf(widget) === -1) {
-      this.widgets.push(widget)
+      this.widgets.push(widget);
     }
   }
 
 }
 
-HarcDashboardController.$inject = ['harcDashboardApiService'];
+HarcDashboardController.$inject = ['$log', 'harcDashboardApiService'];

@@ -4,6 +4,6 @@ export default {
   template: require('./harc-temperature-field.html'),
   controller: HarcTemperatureFieldController,
   require: {
-    modelCtrl: 'ngModel'
-  }
+    modelCtrl: 'ngModel',
+  },
 };

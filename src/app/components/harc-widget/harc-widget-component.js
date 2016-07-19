@@ -3,6 +3,6 @@ export default {
   transclude: {
     title: '?widgetTitle',
     icon: '?widgetIcon',
-    content: '?widgetContent'
-  }
+    content: '?widgetContent',
+  },
 };

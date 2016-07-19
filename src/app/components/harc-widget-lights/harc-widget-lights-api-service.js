@@ -5,7 +5,7 @@ export default class HarcWidgetLightsApiService {
   }
 
   save(room) {
-    return this.$http.put(`/api/dashboard/lights/${room.id}`, {value: room.value})
+    return this.$http.put(`/api/dashboard/lights/${room.id}`, { value: room.value })
       .then((response) => response.data);
   }
 

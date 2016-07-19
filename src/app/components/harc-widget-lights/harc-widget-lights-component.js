@@ -4,9 +4,9 @@ export default {
   template: require('./harc-widget-lights.html'),
   controller: HarcWidgetLightsController,
   bindings: {
-    data: '<'
+    data: '<',
   },
   require: {
-    dashboardCtrl: '^^harcDashboard'
-  }
+    dashboardCtrl: '^^harcDashboard',
+  },
 };

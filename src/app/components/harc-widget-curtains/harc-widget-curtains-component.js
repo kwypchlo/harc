@@ -4,9 +4,9 @@ export default {
   template: require('./harc-widget-curtains.html'),
   controller: HarcWidgetCurtainsController,
   bindings: {
-    data: '<'
+    data: '<',
   },
   require: {
-    dashboardCtrl: '^^harcDashboard'
-  }
+    dashboardCtrl: '^^harcDashboard',
+  },
 };

@@ -5,7 +5,7 @@ export default class HarcWidgetTemperatureApiService {
   }
 
   save(room) {
-    return this.$http.put(`/api/dashboard/temperature/${room.id}`, {value: room.value})
+    return this.$http.put(`/api/dashboard/temperature/${room.id}`, { value: room.value })
       .then((response) => response.data);
   }
 

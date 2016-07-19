@@ -4,9 +4,9 @@ export default {
   template: require('./harc-widget-temperature.html'),
   controller: HarcWidgetTemperatureController,
   bindings: {
-    data: '<'
+    data: '<',
   },
   require: {
-    dashboardCtrl: '^^harcDashboard'
-  }
+    dashboardCtrl: '^^harcDashboard',
+  },
 };

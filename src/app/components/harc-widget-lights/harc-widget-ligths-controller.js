@@ -1,4 +1,4 @@
-import {debounce} from 'lodash';
+import { debounce } from 'lodash';
 
 const debounced = {};
 
@@ -14,8 +14,8 @@ export default class HarcWidgetLightsController {
 
   change(room) {
     if (!debounced[room.id]) {
-      debounced[room.id] = debounce((room) => {
-        return this.api.save(room).then((response) => this.data[this.data.indexOf(room)] = response);
+      debounced[room.id] = debounce((item) => {
+        return this.api.save(item).then((response) => (this.data[this.data.indexOf(item)] = response));
       }, 500);
     }
 

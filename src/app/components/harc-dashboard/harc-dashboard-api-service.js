@@ -5,7 +5,7 @@ export default class HarcDashboardApiService {
   }
 
   get(widgets) {
-    return this.$http.get('/api/dashboard.json', {params: {widgets}}).then((response) => response.data);
+    return this.$http.get('/api/dashboard.json', { params: { widgets } }).then((response) => response.data);
   }
 
 }
