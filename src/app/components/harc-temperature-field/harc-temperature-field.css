@@ -8,10 +8,10 @@
     min-width: 0;
   }
 
-    .harc-temperature-field-button.mod-decrease {
-      color: blue;
-    }
+  .harc-temperature-field-button.md-button.mod-decrease {
+    color: blue;
+  }
 
-    .harc-temperature-field-button.mod-increase {
-      color: red;
-    }
+  .harc-temperature-field-button.md-button.mod-increase {
+    color: red;
+  }

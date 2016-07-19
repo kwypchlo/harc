@@ -8,7 +8,9 @@
       <li ng-repeat="room in $ctrl.data" class="harc-widget-row" layout="row" layout-align="space-between center">
         <div>{{ room.name }}</div>
         <div>
-          <md-switch ng-model="room.value" ng-change="$ctrl.change(room)" aria-label="Switch light in {{ room.name }}"></md-switch>
+          <md-switch ng-model="room.value" ng-change="$ctrl.change(room)"
+                     aria-label="Switch light in {{ room.name }}">
+          </md-switch>
         </div>
       </li>
     </ul>
