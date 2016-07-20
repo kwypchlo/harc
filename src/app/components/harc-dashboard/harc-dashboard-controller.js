@@ -8,15 +8,25 @@ export default class HarcDashboardController {
   }
 
   $onInit() {
-    this.refresh();
+    this.refreshAll();
+  }
+
+  /**
+   * Refresh chosen widget (fetch new data from the server and assign it to component)
+   */
+  refresh(widget) {
+    this.api.get([widget]).then(
+      (data) => (this.data[widget] = data[widget]),
+      () => this.$mdToast.show(this.$mdToast.simple().textContent('Unhandled API error!'))
+    );
   }
 
   /**
    * Refresh all the widgets (fetch new data from the server and assign it to component)
    */
-  refresh() {
+  refreshAll() {
     this.api.get(this.widgets).then(
-      (data) => (this.data = data), // TODO: add some notification?
+      (data) => (this.data = data),
       () => this.$mdToast.show(this.$mdToast.simple().textContent('Unhandled API error!'))
     );
   }
