@@ -16,7 +16,17 @@
       font-size: 59px;
     }
 
-  .harc-widget-row {
+    @media (max-width: 599px) {
+      .harc-widget-aside-title {
+        line-height: 35px;
+      }
+
+      .harc-widget-aside-icon {
+        margin-right: 10px;
+      }
+    }
+
+.harc-widget-row {
     padding: 5px;
     border-bottom: 1px dashed #ccc;
   }

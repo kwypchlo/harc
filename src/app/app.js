@@ -23,6 +23,9 @@ const MODULE_NAME = 'app';
 
 angular.module(MODULE_NAME, [ngMaterial, harcDashboard])
   .directive('app', app)
-  .controller('AppCtrl', AppCtrl);
+  .controller('AppCtrl', AppCtrl)
+  .config(['$mdThemingProvider', ($mdThemingProvider) => {
+    $mdThemingProvider.theme('default').accentPalette('indigo');
+  }]);
 
 export default MODULE_NAME;

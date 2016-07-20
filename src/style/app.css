@@ -5,10 +5,7 @@ body {
 
 header {
   text-align: center;
-  background: rgb(3, 155, 229) url(../public/img/header-bg.png);
   color: #fff;
-  background-size: cover;
-  overflow: hidden;
 }
 
 footer {
