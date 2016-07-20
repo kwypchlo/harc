@@ -4,7 +4,8 @@ const debounced = {};
 
 export default class HarcWidgetLightsController {
 
-  constructor(harcWidgetLightsApiService) {
+  constructor($mdToast, harcWidgetLightsApiService) {
+    this.$mdToast = $mdToast;
     this.api = harcWidgetLightsApiService;
   }
 
@@ -12,10 +13,18 @@ export default class HarcWidgetLightsController {
     this.dashboardCtrl.registerWidget('lights');
   }
 
+  /**
+   * Change callback for lights switch. Debounces the api call by 500ms.
+   *
+   * @param {Object} room - full room object, as returned by the api
+   */
   change(room) {
     if (!debounced[room.id]) {
       debounced[room.id] = debounce((item) => {
-        return this.api.save(item).then((response) => (this.data[this.data.indexOf(item)] = response));
+        return this.api.save(item).then(
+          (response) => (this.data[this.data.indexOf(item)] = response), // TODO: add some notification?
+          () => this.$mdToast.show(this.$mdToast.simple().textContent('Unhandled API error!')) // TODO: revert old value
+        );
       }, 500);
     }
 
@@ -24,4 +33,4 @@ export default class HarcWidgetLightsController {
   }
 }
 
-HarcWidgetLightsController.$inject = ['harcWidgetLightsApiService'];
+HarcWidgetLightsController.$inject = ['$mdToast', 'harcWidgetLightsApiService'];

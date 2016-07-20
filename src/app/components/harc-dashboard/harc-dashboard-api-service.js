@@ -4,7 +4,13 @@ export default class HarcDashboardApiService {
     this.$http = $http;
   }
 
-  get(widgets) {
+  /**
+   * Fetch the fresh data from the server for all the passed widgets
+   *
+   * @param {Array} widgets - array of widget names (strings)
+   * @returns {Promise}
+   */
+  get(widgets = []) {
     return this.$http.get('/api/dashboard.json', { params: { widgets } }).then((response) => response.data);
   }
 
