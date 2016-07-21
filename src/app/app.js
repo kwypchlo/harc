@@ -22,7 +22,9 @@ const module = angular.module('app', [ngMaterial, harcDashboard])
   .component('app', appComponent)
   .controller('AppCtrl', AppCtrl)
   .config(['$mdThemingProvider', ($mdThemingProvider) => {
-    $mdThemingProvider.theme('default').accentPalette('indigo');
+    $mdThemingProvider.theme('default')
+      .primaryPalette('light-blue')
+      .accentPalette('light-blue');
   }]);
 
 export default module.name;
