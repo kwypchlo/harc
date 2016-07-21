@@ -24,7 +24,7 @@ export default class HarcWidgetLightsController {
         return this.api.save(item).then(
           (response) => (this.data[this.data.indexOf(item)] = response),
           () => {
-            this.dashboardCtrl.refresh('lights'); // TODO: this could refresh only one room
+            this.dashboardCtrl.refresh('lights');
             this.$mdToast.show(this.$mdToast.simple().textContent('Unhandled API error!'));
           }
         );

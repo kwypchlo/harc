@@ -24,7 +24,7 @@ export default class HarcWidgetTemperatureController {
         return this.api.save(item).then(
           (response) => (this.data[this.data.indexOf(item)] = response),
           () => {
-            this.dashboardCtrl.refresh('temperature'); // TODO: this could refresh only one room
+            this.dashboardCtrl.refresh('temperature');
             this.$mdToast.show(this.$mdToast.simple().textContent('Unhandled API error!'));
           }
         );

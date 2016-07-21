@@ -3,7 +3,7 @@ import harcWidgetComponent from './harc-widget-component';
 import './harc-widget.css';
 
 /**
- * # Widget wrapper component <es-widget>
+ * # Widget wrapper component <harc-widget>
  *
  * Wraps and visually normalizes all application widgets.
  *

@@ -18,8 +18,8 @@ import HarcDashboardApiService from './harc-dashboard-api-service';
  * Creating new widget component step by step:
  *
  * - create a component with prefix `harc-widget-` (eg. `harc-widget-audio`)
- * - in a template file, your widget should be wrapped in `es-widget` component
- * (see `es-widget` documentation, make sure to import `harcWidget` module)
+ * - in a template file, your widget should be wrapped in `harc-widget` component
+ * (see `harc-widget` documentation, make sure to import `harcWidget` module)
  *
  * ## Using widget component
  *

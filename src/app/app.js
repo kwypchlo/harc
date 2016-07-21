@@ -7,11 +7,10 @@ import 'angular-material/angular-material.css';
 import '../style/icomoon.css';
 import '../style/app.css';
 
-const app = () => ({
+const appComponent = {
   template: require('./app.html'),
   controller: 'AppCtrl',
-  controllerAs: 'app',
-});
+};
 
 class AppCtrl {
   constructor() {
@@ -19,13 +18,11 @@ class AppCtrl {
   }
 }
 
-const MODULE_NAME = 'app';
-
-angular.module(MODULE_NAME, [ngMaterial, harcDashboard])
-  .directive('app', app)
+const module = angular.module('app', [ngMaterial, harcDashboard])
+  .component('app', appComponent)
   .controller('AppCtrl', AppCtrl)
   .config(['$mdThemingProvider', ($mdThemingProvider) => {
     $mdThemingProvider.theme('default').accentPalette('indigo');
   }]);
 
-export default MODULE_NAME;
+export default module.name;
