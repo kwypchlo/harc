@@ -1,5 +1,7 @@
 .harc-widget {
   padding: 5px;
+  margin: 0;
+  height: 100%;
 }
 
   .harc-widget-aside {

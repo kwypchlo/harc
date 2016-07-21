@@ -3,12 +3,16 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-header h1 {
+header {
   text-align: center;
-  color: #fff;
 }
 
+  header h1 {
+    color: #fff;
+  }
+
 footer {
+  margin-top: 10px;
   text-align: center;
   color: #ccc;
 }

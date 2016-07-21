@@ -9,10 +9,6 @@ export default class HarcWidgetCurtainsController {
     this.api = harcWidgetCurtainsApiService;
   }
 
-  $onInit() {
-    this.dashboardCtrl.registerWidget('curtains');
-  }
-
   /**
    * Change callback for curtains slider. Debounces the api call by 500ms.
    *

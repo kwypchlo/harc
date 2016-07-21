@@ -9,10 +9,6 @@ export default class HarcWidgetTemperatureController {
     this.api = harcWidgetTemperatureApiService;
   }
 
-  $onInit() {
-    this.dashboardCtrl.registerWidget('temperature');
-  }
-
   /**
    * Change callback for temperature field. Debounces the api call by 500ms.
    *

@@ -1,5 +1,5 @@
-<div layout-lg="row" layout="column">
-  <harc-widget-lights data="$ctrl.data.lights" flex></harc-widget-lights>
-  <harc-widget-temperature data="$ctrl.data.temperature" flex></harc-widget-temperature>
-  <harc-widget-curtains data="$ctrl.data.curtains" flex></harc-widget-curtains>
+<div layout="column" layout-gt-lg="row" class="harc-dashboard">
+  <harc-widget-lights data="$ctrl.data.lights" class="harc-dashboard-widget"></harc-widget-lights>
+  <harc-widget-temperature data="$ctrl.data.temperature" class="harc-dashboard-widget"></harc-widget-temperature>
+  <harc-widget-curtains data="$ctrl.data.curtains" class="harc-dashboard-widget"></harc-widget-curtains>
 </div>

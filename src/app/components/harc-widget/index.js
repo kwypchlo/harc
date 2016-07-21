@@ -6,6 +6,8 @@ import './harc-widget.css';
  * # Widget wrapper component <harc-widget>
  *
  * Wraps and visually normalizes all application widgets.
+ * There is an important, required binding on the harc-widget:
+ * - widgetName (widget-name attribute) - string with a widget identifier (used by dashboard api)
  *
  * Transclude containers:
  * - widgetTitle (optional): put a title there
@@ -13,7 +15,7 @@ import './harc-widget.css';
  * - widgetContent: your widget content
  *
  * Usage:
- * <harc-widget>
+ * <harc-widget widget-name="lights">
  *  <widget-title>Lights</widget-title>
  *  <widget-icon>
  *    <md-icon md-font-icon="icon-sun"></md-icon>

@@ -4,6 +4,7 @@ import harcWidgetLights from '../harc-widget-lights';
 import harcWidgetTemperature from '../harc-widget-temperature';
 import harcDashboardComponent from './harc-dashboard-component';
 import HarcDashboardApiService from './harc-dashboard-api-service';
+import './harc-dashboard.css';
 
 /**
  * # Dashboard component
@@ -23,9 +24,7 @@ import HarcDashboardApiService from './harc-dashboard-api-service';
  *
  * ## Using widget component
  *
- * - in harc-dashboard component, add your widget to harc-dashboard.html
- * - your widget should contain controller and require `harcDashboard` component as a parent
- * - in your widget controller, call `register` method on required `harcDashboard` controller with your widget name (id) as a param
+ * - in harc-dashboard component, add your widget to harc-dashboard.html with a class `harc-dashboard-widget`
  * - extend dashboard api to return widget data on general api call (with name of the widget as a param)
  */
 const module = angular

@@ -9,10 +9,6 @@ export default class HarcWidgetLightsController {
     this.api = harcWidgetLightsApiService;
   }
 
-  $onInit() {
-    this.dashboardCtrl.registerWidget('lights');
-  }
-
   /**
    * Change callback for lights switch. Debounces the api call by 500ms.
    *
